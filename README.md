@@ -2,6 +2,14 @@
 
 https://concourse.ci/binaries.html
 
+# Prerequisites
+
+```bash
+brew install postgresql
+brew services start postgresql
+createdb atc
+```
+
 # Launch
 
 ```bash
