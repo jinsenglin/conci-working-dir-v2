@@ -12,6 +12,13 @@ concourse web \
   --tsa-host-key tsa_host_key \
   --tsa-authorized-keys authorized_worker_keys \
   --external-url http://127.0.0.1
+
+
+sudo concourse worker \
+  --work-dir /opt/concourse/worker \
+  --tsa-host 127.0.0.1 \
+  --tsa-public-key tsa_host_key.pub \
+  --tsa-worker-private-key worker_key
 ```
 
 # Demo
@@ -28,6 +35,12 @@ concourse web \
   --tsa-host-key tsa_host_key \
   --tsa-authorized-keys authorized_worker_keys \
   --external-url http://127.0.0.1
+
+sudo concourse worker \
+  --work-dir /opt/concourse/worker \
+  --tsa-host 127.0.0.1 \
+  --tsa-public-key tsa_host_key.pub \
+  --tsa-worker-private-key worker_key
 
 cd ci/helpers
 bash demo.sh
