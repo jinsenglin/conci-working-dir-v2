@@ -1,6 +1,6 @@
 # Install
 
-https://concourse.ci/binaries.html
+See https://concourse.ci/binaries.html
 
 # Prerequisites
 
